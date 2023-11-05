@@ -1,0 +1,16 @@
+﻿@model ProductsListViewModel
+
+<h1>Products</h1>
+@foreach(var item in Model.Products){
+    <h1>Name : @item.Name</h1>
+    <h1>Price : @item.Price manat</h1>
+    <br />
+}
+
+<hr/>
+
+<h1>Categories</h1>
+@foreach (var item in Model.Categories)
+{
+    <h1 >Name : @item.Title</h1>
+}

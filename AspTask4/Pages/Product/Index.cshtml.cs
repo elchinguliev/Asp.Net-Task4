@@ -32,7 +32,7 @@ namespace AspTask4.Pages.Product
         }
 
 
-        public IActionResult OnGetMyOnClick(int id)
+        public IActionResult Delete(int id)
         {
             _context.Remove(_context.Products.Single(a => a.Id == id));
             _context.SaveChanges();
